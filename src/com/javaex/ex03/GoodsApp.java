@@ -9,11 +9,11 @@ public class GoodsApp {
 
     public static void main(String[] args) {
 
+    	List <Goods> goods = new ArrayList<>();
     	Scanner sc = new Scanner(System.in);
     	System.out.println("상품을 입력해주세요 (종료: q)");
     	
     	boolean q = true;
-    	List <Goods> goods = new ArrayList<>();
     	
     	while(q) {
     		String s = sc.next();
@@ -27,7 +27,7 @@ public class GoodsApp {
     		int price = Integer.parseInt(str[1]);
     		int count = Integer.parseInt(str[2]);
     		
-    		Goods g = new Goods (str[0], price, count);
+    		Goods g = new Goods (str[0].trim(), price, count);
     		goods.add(g);
     		
     	}
