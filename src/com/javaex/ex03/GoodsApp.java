@@ -16,7 +16,7 @@ public class GoodsApp {
     	boolean q = true;
     	
     	while(q) {
-    		String s = sc.next();
+    		String s = sc.nextLine();
     		if (s.equals("q")) {
     			q = false;
     			System.out.println("[입력완료]");

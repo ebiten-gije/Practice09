@@ -14,16 +14,16 @@ public class FriendApp {
     	List <Friend> friend = new ArrayList<>();
     	
     	for(int i = 0; i < 3; i++) {
-    		String s = sc.nextLine();
-    		String [] str = s.split(" ");
-    		Friend f = new Friend(str[0], str[1], str[2]);
+    		String line = sc.nextLine();
+    		String [] strArray = line.split(" ");
+    		Friend f = new Friend(strArray[0], strArray[1], strArray[2]);
     		friend.add(f);
     	}
     	
-    	Iterator<Friend> fri = friend.iterator();
+    	Iterator<Friend> friendIterator = friend.iterator();
 		
-		while (fri.hasNext()) {	//	뒤에 더 있니?
-			Friend item = fri.next();
+		while (friendIterator.hasNext()) {	//	뒤에 더 있니?
+			Friend item = friendIterator.next();
 			System.out.println(item);
 		}	
     	
